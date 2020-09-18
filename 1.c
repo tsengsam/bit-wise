@@ -37,8 +37,7 @@ bool is_ascii(const char str[], size_t size) {
   }
   return true;
 }
-int main()
-{
+int main() {
   char s[] = "abc*®+_|]";
   if (is_ascii(s, 11)) {
     printf("all characters valid\n");
