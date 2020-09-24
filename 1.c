@@ -49,8 +49,8 @@ bool is_alphabet(char str[], size_t size)
 	uint64_t upper_mask = (A^Z) & PACKED_BYTE(0x80);/*If one byte is 80 then the corresponding character is upper alphabet*/
 	uint64_t a = payload + PACKED_BYTE(128 - 'a');
 	uint64_t z = payload + PACKED_BYTE(127 - 'z' );
-	uint64_t lowwer_mask = (a ^ z) & PACKED_BYTE(0x80);
-	if ((upper_mask | lowwer_mask) ^ PACKED_BYTE(0x80))
+	uint64_t lower_mask = (a ^ z) & PACKED_BYTE(0x80);
+	if ((upper_mask | lower_mask) ^ PACKED_BYTE(0x80))
 	    return false;
 	i += 8;
     }
