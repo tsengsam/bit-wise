@@ -35,7 +35,7 @@ bool is_ascii(const char str[], size_t size)
 }
 int main()
 {
-    char str[] = "as12!@{}~~";
+    char str[] = "as12!@[}~~";
     // char str[] = "AaÀ123}@`Ë";
     printf("str = %s\n", str);
     if (is_ascii(str, 10)) {
