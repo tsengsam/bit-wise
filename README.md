@@ -1,2 +1,3 @@
 # Bit-wise (quiz2)
-This week I learned bit-wise operations.
+NCKU System Software Course: 2nd weekly quiz
+This week kept focus on bit-wise operations
